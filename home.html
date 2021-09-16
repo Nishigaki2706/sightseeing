@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sightseeing/css/stlye.css">
+    <title>○○紹介</title>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <div class="menu">メニュー</div>
+        </nav>
+        <div class="title">○○紹介</div>
+        <!-- <div class="login"><a href="sign-up.php">会員登録する</a></div>
+        <div class="login"><a href="sign-in.php">ログインする</a></div>
+        <a href="#list">○○一覧</a> -->
+    </header>
+    <!-- メインビジュアル-->
+    <div class="mainvisual">
+        <img src="../sightseeing/img/085AME0226_TP_V.jpg" alt="" class="img1">
+        <img src="../sightseeing/img/20210411-_1012997_TP_V.jpg" alt="" class="img2">
+        <img src="../sightseeing/img/heriyakei419179_TP_V.jpg" alt="" class="img3">
+        <img src="../sightseeing/img/KUMAKICHI1027539_TP_V.jpg" alt="" class="img4">
+    </div>
+    <!-- サイドバー -->
+    <div class="sideber">
+        <ul class="side">
+            <li class="side-name"><a href="sign-up.php" target="_blank">会員登録する</a></li>
+            <li class="side-name"><a href="sign-in.php" target="_blank">ログインする</a></li>
+            <li class="side-name"><a href="contact.php" target="_blank">お問い合わせ</a></li>
+        </ul>
+    </div>
+    <!-- サンプル -->
+    <div class="content">
+        <div class="detail">
+                        <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                        <div class="tokyo">タイトル</div>
+                        <div class="text">
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        </div>
+                        <div class="more"><a href="more.php">More</a></div>
+        </div>
+        <div class="detail">
+                        <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                        <div class="tokyo">タイトル</div>
+                        <div class="text">
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        </div>
+                        <div class="more"><a href="more.php">More</a></div>
+        </div>
+        <div class="detail">
+                        <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                        <div class="tokyo">タイトル</div>
+                        <div class="text">
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        </div>
+                        <div class="more"><a href="more.php">More</a></div>
+        </div>
+        <div class="detail">
+                        <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                        <div class="tokyo">タイトル</div>
+                        <div class="text">
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        </div>
+                        <div class="more"><a href="more.php">More</a></div>
+        </div>
+        <div class="detail">
+                        <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                        <div class="tokyo">タイトル</div>
+                        <div class="text">
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        テキストテキストテキストテキスト<br>
+                        </div>
+                        <div class="more"><a href="more.php">More</a></div>
+        </div>
+        <div class="detail">
+                    <img src="../sightseeing/img/tokyoyakeiIMGL31731929_TP_V.jpg" alt="">
+                    <div class="tokyo">タイトル</div>
+                    <div class="text">
+                    テキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキスト<br>
+                    </div>
+                    <div class="more"><a href="more.php">More</a></div>
+        </div>
+    </div>
+    <h2 id="list">○○一覧</h2>
+
+    <script src="../sightseeing/jquery.min.js"></script>
+    <script>
+        $('.sideber').hide();
+        $('header nav').on('click', function(){
+            $('.sideber').slideToggle();
+        })
+    </script>
+</body>
+</html>
