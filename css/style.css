@@ -8,11 +8,12 @@ body{
 /* ヘッダー */
 header{
     text-align: center;
-    position: relative;
-    /* position: fixed; */
+    /* position: relative; */
+    position: fixed;
     width: 100%;
     background-color: rgb(70, 62, 62);
     /* overflow: hidden; */
+    z-index: 11;
 }
 
 .head{/* position: fixed; */}
@@ -37,13 +38,13 @@ header nav .menu:hover{
 .title{
     font-size: 2rem;
     border-bottom: solid 2px gray;
-    padding-right: 80px;
+    padding-right: 138px;
 }
 /* メインビジュアル */
 .bg_loop {
     position: relative;
     width: 100vw;
-    height: calc(100vh - 68px);
+    height: calc(100vh - 29px);
     overflow: hidden;
 }
 .bg_loop::before,
@@ -129,7 +130,9 @@ header nav .menu:hover{
     height: 100%;
     width: 190px;
     position: fixed;
+    z-index:10;
     /* overflow: hidden; */
+    margin-top: 48px;
 }
 
 .side{
@@ -159,20 +162,19 @@ padding-top: 20px;
 }
 
 .side .side-name a {
-
-color: antiquewhite;
-
-text-decoration: none;
-
-border-bottom: solid 2px;
+    color: antiquewhite;
+    text-decoration: none;
+    border-bottom: solid 2px;
 }    
 
 .side :hover{
     cursor: pointer;
 }
+.move{
+    scroll-behavior: smooth;
+}
 
-
-/* 全体 */
+/* サンプル */
 .content{
     display: flex;
     align-items: center;
@@ -183,10 +185,20 @@ border-bottom: solid 2px;
     /* padding-top: 100px; */
     margin-bottom: 200px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .sample{
     
+/* left: 50%; */
+    
+font-size: 2rem;
+    
+margin-top: 30px;
+    
+border-bottom: solid 2px gray;
+    
+text-align: center;
 }
 
 .detail{
@@ -223,3 +235,45 @@ color: antiquewhite;
 h2{
     text-align: center;
 }
+/* 会員登録画面 */
+
+.sign-up{
+    margin-top: 14%;
+}
+
+h1{
+    
+text-align: center;
+}
+
+form{display: flex;flex-flow: column;/* margin-top: 15%; */}
+
+input{
+
+}
+
+.register{
+    
+width: 45%;
+
+height: 35px;
+
+margin: auto;
+
+margin-top: 36px;
+}
+
+button{
+
+margin: auto;
+
+margin-top: 36px;
+
+text-align: center;
+
+width: 9%;
+
+height: 49px;
+}
+
+a{text-decoration: none;color: black;}
